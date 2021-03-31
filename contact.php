@@ -61,7 +61,7 @@
             $headers .= "X-Priority: 1\r\n";
             $headers .= "X-MSMail-Priority: High\r\n";
             $headers .= "X-Mailer: PHP/" . phpversion();
-            $headers .= "Content-type: text/plain; charset=iso-8859-1\r\n";
+            $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
 
             // Send the email
             mail($to, $subject, $message, $headers);
