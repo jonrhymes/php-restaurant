@@ -55,13 +55,13 @@
             $message = wordwrap($message, 72);
 
             // Set the mail headers into a variable
-            $headers = "MIME-Version: 1.0\r\n";
-            $headers .= "Content-type: text/plain; charset=utf-8\r\n";
-            $headers .= "Content-Transfer-Encoding: 8bit\r\n";
-            $headers .= "From: $name <$email> \r\n";
+            // $headers = "MIME-Version: 1.0\r\n";
+            // $headers .= "Content-type: text/plain; charset=utf-8\r\n";
+            // $headers .= "Content-Transfer-Encoding: 8bit\r\n";
+            $headers = "From: $name <$email> \r\n";
             $headers .= "Reply-To: $name <$email> \r\n";
-            $headers .= "X-Priority: 1\r\n";
-            $headers .= "X-MSMail-Priority: High\r\n\r\n";
+            // $headers .= "X-Priority: 1\r\n";
+            // $headers .= "X-MSMail-Priority: High\r\n";
             $headers .= "X-Mailer: PHP/" . phpversion();
 
             // Send the email
