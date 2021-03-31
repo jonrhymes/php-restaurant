@@ -56,10 +56,13 @@
 
             // Set the mail headers into a variable
             $headers = "MIME-Version: 1.0\r\n";
-            $headers .= "Content-type: text/plain; charset=iso-8859-1\r\n";
+            $headers .= "Content-type: text/plain; charset=utf-8\r\n";
+            $headers .= "Content-Transfer-Encoding: 8bit\r\n";
             $headers .= "From: $name <$email> \r\n";
+            $headers .= "Reply-To: $name <$email> \r\n";
             $headers .= "X-Priority: 1\r\n";
             $headers .= "X-MSMail-Priority: High\r\n\r\n";
+            $headers .= "X-Mailer: PHP/" . phpversion();
 
             // Send the email
             mail($to, $subject, $message, $headers);
@@ -68,7 +71,7 @@
     <!-- Show success message after email has sent-->
     <h5>Thanks for contacting Franklin's</h5>
     <p>Please allow 24 hours for a response.</p>
-    <p><a href="/final" class="button block">&laquo; Go to Home Page</a></p>
+    <p><a href="index.php" class="button block">&laquo; Go to Home Page</a></p>
 
         <?php } else { ?>
 
