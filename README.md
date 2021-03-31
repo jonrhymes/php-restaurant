@@ -1,7 +1,7 @@
 # PHP Restaurant
 
 ## :battery: Link to live site:
-[Franklin's Fine Dining](https://jonrhymes.github.io/php-restaurant/)
+[Franklin's Fine Dining](https://php-restaurant.herokuapp.com/)
 
 ## :trophy: Goals:
 * A dynamic website that displays Home, Team Members, Menu and Contact pages. 
